@@ -1,4 +1,4 @@
-// Pedir al usuario que ingrese nombres de ciudades mediante prompt
+// Pedir al usuario que ingrese nombres de ciudades
 const ciudades = [];
 
 while (true) {
@@ -13,10 +13,10 @@ while (true) {
 }
 
 // Mostrar el arreglo generado
-console.log("Arreglo de ciudades:", ciudades);
+document.write("Arreglo de ciudades:", ciudades);
 
 // Mostrar la longitud del arreglo
-console.log("Longitud del arreglo:", ciudades.length);
+document.write("Longitud del arreglo:", ciudades.length);
 
 // Mostrar en el documento web los ítems de las posiciones primera, tercera y última
 document.write(`<p>Primera ciudad: ${ciudades[0]}</p>`);
@@ -27,10 +27,10 @@ document.write(`<p>Última ciudad: ${ciudades[ciudades.length - 1]}</p>`);
 ciudades.push("París");
 
 // Mostrar por pantalla el elemento que ocupa la segunda posición
-console.log("Ciudad en la segunda posición:", ciudades[1]);
+document.write("Ciudad en la segunda posición:", ciudades[1]);
 
 // Sustituir el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'
 ciudades[1] = "Barcelona";
 
 // Mostrar el arreglo actualizado
-console.log("Arreglo actualizado:", ciudades);
+document.write("Arreglo actualizado:", ciudades);
